@@ -1,0 +1,19 @@
+.brand_image{
+    height: 200px;
+}
+.navbar{
+    box-shadow:none;
+}
+#bolb{
+    position: relative;
+    left: 20px;
+    top: 200px;
+    width: 200px;
+    
+}
+#backTop{
+    scroll-behavior: smooth;
+}
+#backTop:hover{
+    color: 	rgb(2, 117, 216);
+}
