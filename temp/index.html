@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <title>Temperature Converter</title>
+
+    <style>
+
+        body{
+            background-color: rgb(235, 245, 245);
+        }
+        .header{
+           
+            border: 1px solid white;
+            color: whitesmoke;
+            border-radius: 5px;
+            background-color:rgb(13, 173, 212);
+            margin: 50px 550px;
+            text-align: center;
+        }
+
+        input{
+            text-align:center;
+            background-color: rgb(13, 173, 212);
+            border: 1px solid rgb(13, 173, 212);
+            height:40px;
+            width: 200px;
+            color: white;
+            border-radius: 5px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        select{
+            height:40px;
+            color: white;
+            border: 1px solid rgb(13, 173, 212);
+            background-color: rgb(13, 173, 212);
+            width: 50px;
+            border-radius: 5px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        ::placeholder {
+            color: white;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .box{
+
+            height: 400px;
+            border: 2px solid rgb(13, 173, 212);
+            border-radius: 30px;
+            text-align:center;
+            margin-top: 90px;
+            padding: 50px 50px;
+            width: 500px;
+            margin-left: 400px;
+        }
+
+        .box1{
+            margin-left: 110px;
+            margin-top: 120px;
+            text-align: center;
+            
+        }
+        button{
+            text-align:center;
+            background-color: rgb(13, 173, 212);
+            border: 1px solid rgb(13, 173, 212);
+            height: 30px;
+            width: 100px;
+            margin-left: 10px;
+            margin-top: 10px;
+            border-radius: 20px;
+            color: white;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        button:hover{
+            background-color:rgb(182, 128, 223);
+        }
+        #output{
+            color: white;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .sel{
+            margin-right:100px;
+        }
+        .box3{
+
+            text-align: center;
+            width:280px;
+            height: 40px;
+            border:1px solid rgb(13, 173, 212);
+            margin-top: 30px;
+            margin-left: 120px;
+            background-color: rgb(13, 173, 212);
+            border-radius: 5px;
+        }
+        @media(max-width:700px){
+            .sel{
+                margin-right:20px;
+            }
+        }
+
+        @media(max-width:500px){
+            .sel{
+                margin-right:0px;
+            }
+        }
+        @media(max-width:480px){
+            input{
+                text-align:center;
+                border-color:red;
+                width:200px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="header">Temperature Converter</h1>
+
+    <div class="box">
+        <div class="box1">
+            <div>
+                <input type="text" id="temperature"placeholder="Enter the Temperature">
+                <select class="sel" id="unit">
+                    <option value="op1">&#8451</option>
+                    <option value="op2">&#8457</option>
+                </select>
+            </div>
+            
+            <br>
+            
+        </div>
+
+        <div>
+            <button onclick="myfunction()">Convert</button>
+        </div>
+        <div class="box3">
+            <h3 id="output" ></h3>
+        </div>
+        <p id="output" > 
+        
+        </p>
+        
+    </div>
+
+    <script src="script.js">
+        
+    </script>
+
+</body>
+
+</html>
